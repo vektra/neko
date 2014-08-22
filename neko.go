@@ -7,7 +7,7 @@ import (
 )
 
 // Simple tuple around a test description and the work
-type Test struct {
+type test struct {
 	Name string
 	Func func()
 }
@@ -20,7 +20,7 @@ type Organizer struct {
 
 	mocks []*mock.Mock
 	setup []func()
-	tests []Test
+	tests []test
 }
 
 // Create a new Organizer against testing's T interface
@@ -40,13 +40,13 @@ func (o *Organizer) Setup(f func()) {
 
 // Add a test.
 func (o *Organizer) It(name string, f func()) {
-	o.tests = append(o.tests, Test{name, f})
+	o.tests = append(o.tests, test{name, f})
 }
 
 // Useful by allowing the developer to simply add 'N' before
 // It to disable a block.
 func (o *Organizer) NIt(name string, f func()) {
-	o.tests = append(o.tests, Test{name, nil})
+	o.tests = append(o.tests, test{name, nil})
 }
 
 // Coordinate running the tests with the setups and mocks
