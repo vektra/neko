@@ -16,7 +16,7 @@ your mocks (clearing and asserting them).
 
 Here is a quick example:
 
-```
+```go
 import (
   "testing"
   "github.com/vektra/neko"
