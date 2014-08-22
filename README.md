@@ -24,7 +24,7 @@ import (
 )
 
 func TestNekoEnjoysFun(t *testing.T) {
-	n := neko.Start()
+	n := neko.Start(t)
 
 	var fun Fun
 
