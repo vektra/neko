@@ -1,7 +1,7 @@
 neko - a simple golang test organizer
 =====================================
 
-[godoc.org/github.com/vektra/neko](Doc's from Godoc.org!)
+[Doc's from Godoc.org!](godoc.org/github.com/vektra/neko)
 
 There are many tools for improving Go's tests.
 
