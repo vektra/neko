@@ -14,10 +14,9 @@ common setup between tests.
 Oh, and it integrates with `github.com/stretchr/testify/mock` to coordinate
 your mocks (clearing and asserting them).
 
-Here is a quick example
+Here is a quick example:
 
 ```
-
 import (
   "testing"
   "github.com/vektra/neko"
@@ -44,5 +43,4 @@ func TestNekoEnjoysFun(t *testing.T) {
 		}
 	})
 }
-
 ```
