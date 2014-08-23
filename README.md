@@ -42,5 +42,7 @@ func TestNekoEnjoysFun(t *testing.T) {
 			t.Fatal("no fun time? :( :(")
 		}
 	})
+
+  n.Meow()
 }
 ```
