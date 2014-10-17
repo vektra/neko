@@ -28,7 +28,7 @@ func TestNekoEnjoysFun(t *testing.T) {
 	var fun Fun
 
 	n.Setup(func() {
-		fun = CreateAmmusements()
+		fun = CreateAmeowsements()
 	})
 
 	n.It("enjoys fun", func() {
@@ -42,5 +42,7 @@ func TestNekoEnjoysFun(t *testing.T) {
 			t.Fatal("no fun time? :( :(")
 		}
 	})
+
+  n.Meow()
 }
 ```
